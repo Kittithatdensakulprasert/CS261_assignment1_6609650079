@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="background-container">
+        <div class="content-wrapper">
+            <div class="logo-container">
+                <img src="img/Thammasat.png" alt="Thammasat Logo">
+                <h1>LOGIN FORM</h1>
+            </div>
+            <div class="login-container">
+                <form id="loginForm">
+                    <div class="input-group">
+                        <div class="icon">
+                            <img src="img/user-icon.png" alt="User Icon">
+                        </div>
+                        <input type="text" id="username" name="username" placeholder="Username" required>
+                    </div>
+                    <div class="input-group">
+                        <div class="icon">
+                            <img src="img/lock-icon.jpg" alt="Lock Icon">
+                        </div>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                        <span class="toggle-password" onclick="togglePassword()">👁️</span>
+                    </div>
+                    <div class="input-group">
+                        <select id="role">
+                            <option value="" disabled selected>Select your role</option>
+                            <option value="option1">Student</option>
+                            <option value="option2">Lecturer</option>
+                        </select>
+                    </div>
+                    <center><button type="button" onclick="submitLogin()">Login</button></center>
+                </form>
+                <div id="message" class="scrollable-message"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
