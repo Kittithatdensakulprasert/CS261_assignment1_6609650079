@@ -36,6 +36,7 @@ function submitLogin() {
             displayUserInfo(data, role);
         } else {
             messageElement.innerHTML = '<div class="error">' + data.message + '</div>';
+            alert("Error: ไม่สามารถ Login ได้สำเร็จ");
         }
     })
     .catch(error => {
